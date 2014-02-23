@@ -1,16 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Web", "MediaServices.Web\MediaServices.Web.csproj", "{437A852E-9595-44F0-A814-DECAA8A40FA8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Web.Contract", "MediaServices.Web.Contract\MediaServices.Web.Contract.csproj", "{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D122BB70-675A-4CD7-97CF-7E18957922EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaService.Access.Tests", "Tests\MediaService.Access.Tests\MediaService.Access.Tests.csproj", "{FF2E94F1-A41D-4821-972C-4EB05420C2B7}"
-	ProjectSection(ProjectDependencies) = postProject
-		{437A852E-9595-44F0-A814-DECAA8A40FA8} = {437A852E-9595-44F0-A814-DECAA8A40FA8}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Converter", "MediaServices.Converter\MediaServices.Converter.csproj", "{F5AA623C-242B-4CF6-A127-D2EF04F68175}"
 EndProject
@@ -18,20 +11,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaService.Converter.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Common", "MediaServices.Common\MediaServices.Common.csproj", "{FF0AF6D0-44D3-4A73-847C-05951DD84F6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Contract", "MediaServices.Contract\MediaServices.Contract.csproj", "{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Core.Tests", "Tests\MediaServices.Core.Tests\MediaServices.Core.Tests.csproj", "{1639749E-9C96-4336-A0D2-86B007AACFC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Common.Tests", "Tests\MediaServices.Common.Tests\MediaServices.Common.Tests.csproj", "{2FBB30FC-DD85-4B2D-A4BC-5672986BAE7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaServices.Core", "MediaServices.Core\MediaServices.Core.csproj", "{CDEE9A11-B74C-41EE-B205-4D7FB80ECF1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{437A852E-9595-44F0-A814-DECAA8A40FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{437A852E-9595-44F0-A814-DECAA8A40FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{437A852E-9595-44F0-A814-DECAA8A40FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{437A852E-9595-44F0-A814-DECAA8A40FA8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF2E94F1-A41D-4821-972C-4EB05420C2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF2E94F1-A41D-4821-972C-4EB05420C2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2E94F1-A41D-4821-972C-4EB05420C2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,6 +41,22 @@ Global
 		{FF0AF6D0-44D3-4A73-847C-05951DD84F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF0AF6D0-44D3-4A73-847C-05951DD84F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF0AF6D0-44D3-4A73-847C-05951DD84F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FEFAD62-AC20-4275-ACF3-7DF3104E72CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1639749E-9C96-4336-A0D2-86B007AACFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1639749E-9C96-4336-A0D2-86B007AACFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1639749E-9C96-4336-A0D2-86B007AACFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1639749E-9C96-4336-A0D2-86B007AACFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBB30FC-DD85-4B2D-A4BC-5672986BAE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBB30FC-DD85-4B2D-A4BC-5672986BAE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBB30FC-DD85-4B2D-A4BC-5672986BAE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBB30FC-DD85-4B2D-A4BC-5672986BAE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDEE9A11-B74C-41EE-B205-4D7FB80ECF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDEE9A11-B74C-41EE-B205-4D7FB80ECF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDEE9A11-B74C-41EE-B205-4D7FB80ECF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDEE9A11-B74C-41EE-B205-4D7FB80ECF1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +64,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FF2E94F1-A41D-4821-972C-4EB05420C2B7} = {D122BB70-675A-4CD7-97CF-7E18957922EA}
 		{CD7D19F0-2A3B-4E71-A48B-C76EA9383A2C} = {D122BB70-675A-4CD7-97CF-7E18957922EA}
+		{1639749E-9C96-4336-A0D2-86B007AACFC6} = {D122BB70-675A-4CD7-97CF-7E18957922EA}
+		{2FBB30FC-DD85-4B2D-A4BC-5672986BAE7E} = {D122BB70-675A-4CD7-97CF-7E18957922EA}
 	EndGlobalSection
 EndGlobal
