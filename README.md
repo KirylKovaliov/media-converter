@@ -24,9 +24,11 @@ Task.WaitAll(task);
 
 Decode video webm format using VP8 codec
 ```csharp
-var options = AvOptions.WebmVideo(@"Data\movie.mp4", string.Format(@"result.webm", OutputDir));
+var options = AvOptions.WebmVideo(@"Data\movie.mp4", string.Format(@"{0}\result.webm", OutputDir));
 MediaConvertor converter = new MediaConvertor();
 Task task = converter.Convert(options);
+
+Task.WaitAll(task);
 ```
 
 The same list of options are available for audio convertation
