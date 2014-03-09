@@ -34,3 +34,17 @@ Task.WaitAll(task);
 ```
 
 The same list of options are available for audio convertation
+
+Extract preview from video file
+-----
+```csharp
+string output = string.Format(@"{0}\preview.png", OutputDir);
+
+MediaConvertor converter = new MediaConvertor();
+Task task = converter.ExtractPreview(@"Data\movie.mp4", output);
+
+Task.WaitAll(task);
+```
+
+See more examples in project Unit tests
+
